@@ -16,6 +16,7 @@
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --modal-button-border-color:rgba(0, 0, 0, 0.1);
   --text-picture-bg-color: rgba(47, 48, 58, 0.8);
+  --contacts-input-bg-color:rgba(255, 255, 255, 0.3);
 }
  
 body {
@@ -449,10 +450,6 @@ body {
   padding-bottom: 60px;  
 }
 
-.contacts-container {
-  display: block;  
-}
-
 .adress .location {
   margin: 0px;
   margin-bottom: 9px;
@@ -528,6 +525,78 @@ body {
 
 .icon-fill {
   fill: var(--secondary-text-color);
+}
+.form {
+   display: flex; 
+   align-items: center;
+   
+   width: 570px; 
+}
+.form-field {
+  /* display: flex;
+  flex-direction: column; */
+  margin-left: 93px;
+  margin-right: 16px;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 20px; 
+  
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.contact-input {
+  /* display: flex;
+  align-items: center; */
+  width: 358px;
+  height: 50px;
+  padding: 0;
+  padding-left: 16px; 
+
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--contacts-input-bg-color);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.contact-button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 29px;
+  width: 200px;
+  height: 50px;  
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-text {
+  margin-right: 10px;
+  text-align: center; 
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  
+  
+  color: var(--secondary-text-color);
+  
+}
+.icon-send {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+
+  fill: var(--secondary-text-color);
+
 }
 /* /Контакты */
 
