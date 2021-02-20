@@ -477,6 +477,45 @@
             <use href="./img/sprite.svg#icon-x-1"></use>
           </svg>
         </button>
+        <form class="data">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <ul class="data-form">
+            <li class="data-list">
+              <label for="name" class="modal-label">Имя</label>
+              <input type="text" class="modal-input" id="name" placeholder="" />
+            </li>
+            <li class="data-list">
+              <label for="tel" class="modal-label">Телефон</label>
+              <input type="tel" class="modal-input" id="tel" placeholder="" />
+            </li>
+            <li class="data-list">
+              <label for="mail" class="modal-label">Почта</label>
+              <input
+                type="Email"
+                class="modal-input"
+                id="mail"
+                placeholder=""
+              />
+            </li>
+            <li class="data-list">
+              <label for="textarea" class="modal-label">Комментарий</label>
+              <textarea
+                class="comment"
+                name="comment"
+                id="textarea"
+                placeholder=""
+              ></textarea>
+            </li>
+          </ul>
+          <div class="checkbox">
+            <input type="checkbox" name="terms" value="terms" id="check" />
+            <label class="contract-term" for="check"
+              >Соглашаюсь с рассылкой и принимаю</label
+            >
+            <a href="#" class="contract-term contract-link">Условия договора</a>
+          </div>
+          <button type="submit" class="send">Отправить</button>
+        </form>
       </div>
     </div>
     <!--/Модалка-->
