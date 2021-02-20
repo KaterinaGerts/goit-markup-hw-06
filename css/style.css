@@ -17,6 +17,7 @@
   --modal-button-border-color:rgba(0, 0, 0, 0.1);
   --text-picture-bg-color: rgba(47, 48, 58, 0.8);
   --contacts-input-bg-color:rgba(255, 255, 255, 0.3);
+  --input-border: rgba(33, 33, 33, 0.2);
 }
  
 body {
@@ -483,8 +484,7 @@ body {
   align-items: baseline;  
   
 } 
-.logo {
-  /* margin-right: 156px; */
+.logo {  
   margin-bottom: 20px;  
 } 
 
@@ -685,26 +685,42 @@ body {
 }
 
 .data-list {
- display: flex;
+  /* position: relative;  */
+  display: flex;
   flex-direction: column; 
 }
+
 .modal-label {
   margin-bottom: 4px;
+  
 }
-.modal-input {
+.modal-input {  
   margin-bottom: 10px;
   width: 448px;
   height: 40px;
+
+  border: 1px solid var(--input-border);
 }
+
+.data-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
 .comment {
   width: 448px;
   height: 120px;
   resize: none;
   margin-bottom: 20px;
+  border: 1px solid var(--input-border);
 }
-.checkbox {
-  position: relative;
+
+.checkbox {  
+  margin-bottom: 30px;
 }
+
 .contract-term {
 font-size: 14px;
 line-height: 1.714;
@@ -713,9 +729,23 @@ letter-spacing: 0.03em;
 
 .contract-link {
   text-decoration: none;
+  color: var(--accent-color);
 }
 .send {
-  position: absolute;
+  width: 200px;
+  height: 50px;
+  
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color)
 }
 /* /Модалка */
 
