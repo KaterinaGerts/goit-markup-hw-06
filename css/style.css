@@ -646,10 +646,10 @@ body {
   width: 30px;
   height: 30px;
   padding: 0px;
-  border: none;
-  background-image: url("../img/x.svg");
 
-  background-color: var(--secondary-text-color);
+  border: 1px solid var(--modal-button-border-color);
+  border-radius: 50%;
+  background-color: var(--secondary-text-color); 
 }
 
 .x-button { 
