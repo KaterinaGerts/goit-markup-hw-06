@@ -784,7 +784,7 @@ fill: var(--accent-color);
 
 .check-box {
   position: absolute;
-  top: 2px;
+  top: 3px;
   left: 7px; 
   
   width: 16px;
@@ -802,11 +802,12 @@ fill: var(--accent-color);
   background-size: contain;
  background-origin:border-box;
 }
-.checkbox-input:focus + .check-box {
+.checkbox-input:focus-within + .check-box {
   border-color: var(--accent-color);
 }
+
 .contract-term {
-  display: inline-block;  
+  display: inline-block;   
   padding-left: 23px;
 
   font-size: 14px;
