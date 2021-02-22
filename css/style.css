@@ -770,7 +770,7 @@ fill: var(--accent-color);
   margin-bottom: 20px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
-  cursor: pointer;
+  
   outline: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
